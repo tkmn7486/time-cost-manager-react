@@ -13,7 +13,7 @@ type Time = {
 type TimerList = Time[]
 
 export const TimerPage = () => {
-    const [timerList, setTimerList] = useState<TimerList | undefined>(
+    const [timerList] = useState<TimerList | undefined>(
         [
             {   
                 category: "string",
@@ -26,11 +26,12 @@ export const TimerPage = () => {
         ]
     )
 
-    const [selecting, setSelecting] = useState<Time | undefined>(undefined)
+    // const [selecting, setSelecting] = useState<Time | undefined>(undefined)
 
     return (
         <div>
             <TimeCard />
+            <p>{JSON.stringify(timerList)}</p>
         </div>
     )
 }

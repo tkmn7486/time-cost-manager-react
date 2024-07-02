@@ -1,4 +1,3 @@
-import { useState } from "react"
 import {
     Card,
     CardContent,
@@ -7,15 +6,6 @@ import {
     CardHeader,
     CardTitle,
 } from "../../ui/card"
-
-type Time = {
-    category: string
-    title: string
-    description: string
-    start: Date
-    end: Date
-    id: string
-}
 
 export const TimeCard = () => {
     return (
